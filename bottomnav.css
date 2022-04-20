@@ -25,6 +25,7 @@ section {
     transition: transform .3s;
 }
 
+
 section.one {
   background: #1a7068;
   -webkit-transition-delay: 0s;
