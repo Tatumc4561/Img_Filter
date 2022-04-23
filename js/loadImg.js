@@ -1,6 +1,6 @@
 
 $(function () {
-$("#b").click(e => {
+$(".button1").click(e => {
     let imageInput = $("#image-input");
     let image = $("[id=image");
     let mainImage = $('#mainimage')
@@ -8,3 +8,14 @@ $("#b").click(e => {
     if (imageInput.val()) mainImage.attr("src", imageInput.val());
   });
 });
+
+$(function () {
+  $(".button2").click(e => {
+      let image = $("[id=image");
+      let mainImage = $('#mainimage')
+      image.attr("src", "https://picsum.photos/500/700");
+      mainImage.attr("src", "https://picsum.photos/500/700")
+ 
+  });
+});
+  

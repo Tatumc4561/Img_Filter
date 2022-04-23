@@ -44,53 +44,6 @@ body {
 
 
 
-.filter-selector {
- 
-    width: 90vw;
-    height: 100%;
-    max-width: 100%;
-    margin-top: 20px;
-    padding-top: 20px;
-}
-
-.selector-color-filter {
-    visibility: hidden;
-    opacity: 0;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-
-}
-
-.selector-color-filter::-webkit-scrollbar {
-    display: none;
-  }
-
-
-.selector-mix-blend {
-    display: flex;
-    overflow: scroll;
-    width: 100%;
-    height: 60px;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-.selector-mix-blend::-webkit-scrollbar {
-    display: none;
-  }
-
-
-.selector-mix-blend label img {
-    width: 40px;
-    height: 40px;
-
-}
-
-.mix-blend {
-    visibility: hidden;
-}
-
 .image-wrapper {
     display: flex;
     justify-content: center;
@@ -103,4 +56,9 @@ body {
     height: auto;
     max-width: 90%;
     padding: 20px;
+}
+
+
+input[type=radio]{
+    visibility: hidden;
 }

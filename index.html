@@ -12,7 +12,8 @@
     <script src="js/applyFilter.js" type="text/javascript"></script>
     <script src="js/applyColor.js" type="text/javascript"></script>
     <script src="js/loadImg.js" type="text/javascript"></script>
-    <script src="js/bottomnav.js" type="text/javascript"></script>
+    <script defer src="js/lowerMenu.js" type="text/javascript"></script>
+    <!-- <script src="js/bottomnav.js" type="text/javascript"></script> -->
 
 
 
@@ -52,16 +53,16 @@
                         URL to a website
                         <div class="url-button-wrap">
                             <input type="url" id="image-input" placeholder="Enter URL for IMG...">
-                            <button id="b">OK</button>
+                            <button class="button1" id="b">OK</button>
                         </div>
                     </li>
                     <li>
                         Generate Random Photo
-                        <button id="b">OK</button>
+                        <button class="button2" id="b">OK</button>
                     </li>
                     <li>
                         Make a Collage
-                        <button id="b">OK</button>
+                        <button class="button3" id="b">OK</button>
                     </li>
                 </ul>
 
@@ -79,13 +80,11 @@
 
 
     <div class="filter-selector">
-        <div class="wrapper">
-            <a class="menu-btn" onclick="toggleMenu()"></a>
-            <section class="one" onclick="goToPage(0)">
-                <h1>Add Color</h1>
-                <div class="selector-color-filter">
 
-                    <!-- <input type="radio" name="filter" id="no-mix" class="mix-blend">
+        <section class="tabcontent1">
+            <div class="selector-color-filter" id="colorSection">
+
+                <!-- <input type="radio" name="filter" id="no-mix" class="mix-blend">
                     <label for="no-mix">
                         <img src="" alt="" id="image">
                     </label>
@@ -100,82 +99,86 @@
                         <img src="" alt="" id="image">
                     </label> -->
 
-                </div>
+            </div>
 
-            </section>
-            <section class="two" onclick="goToPage(1)">
-                <h1>Filters</h1>
-                <div class="selector-mix-blend">
+        </section>
+        <section class="tabcontent2">
 
-                    <input type="radio" name="filter" id="no-mix" class="mix-blend">
-                    <label for="no-mix">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image">
-                    </label>
+            <div class="selector-mix-blend" id="mixSection">
 
-
-                    <input type="radio" name="filter" id="color-burn" class="mix-blend">
-                    <label for="color-burn">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image"
-                            style="mix-blend-mode: color-burn;">
-                    </label>
-
-                    <input type="radio" name="filter" id="darken" class="mix-blend">
-                    <label for="darken">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: darken;">
-                    </label>
+                <input type="radio" name="filter" id="no-mix" class="mix-blend">
+                <label for="no-mix">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image">
+                </label>
 
 
-                    <input type="radio" name="filter" id="overlay" class="mix-blend">
-                    <label for="overlay">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: overlay;">
-                    </label>
+                <input type="radio" name="filter" id="color-burn" class="mix-blend">
+                <label for="color-burn">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: color-burn;">
+                </label>
 
-                    <input type="radio" name="filter" id="lighten" class="mix-blend">
-                    <label for="lighten">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: lighten;">
-                    </label>
+                <input type="radio" name="filter" id="darken" class="mix-blend">
+                <label for="darken">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: darken;">
+                </label>
 
-                    <input type="radio" name="filter" id="soft-light" class="mix-blend">
-                    <label for="soft-light">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image"
-                            style="mix-blend-mode: soft-light;">
-                    </label>
 
-                    <input type="radio" name="filter" id="difference" class="mix-blend">
-                    <label for="difference">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image"
-                            style="mix-blend-mode: difference;">
-                    </label>
+                <input type="radio" name="filter" id="overlay" class="mix-blend">
+                <label for="overlay">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: overlay;">
+                </label>
+                <input type="radio" name="filter" id="lighten" class="mix-blend">
+                <label for="lighten">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: lighten;">
+                </label>
 
-                    <input type="radio" name="filter" id="saturation" class="mix-blend">
-                    <label for="saturation">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image"
-                            style="mix-blend-mode: saturation;">
-                    </label>
+                <input type="radio" name="filter" id="soft-light" class="mix-blend">
+                <label for="soft-light">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: soft-light;">
+                </label>
 
-                    <input type="radio" name="filter" id="hue" class="mix-blend">
-                    <label for="hue">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: hue;">
-                    </label>
+                <input type="radio" name="filter" id="difference" class="mix-blend">
+                <label for="difference">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: difference;">
+                </label>
 
-                    <input type="radio" name="filter" id="color" class="mix-blend">
-                    <label for="color">
-                        <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: color;">
-                    </label>
+                <input type="radio" name="filter" id="saturation" class="mix-blend">
+                <label for="saturation">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: saturation;">
+                </label>
 
-                </div>
+                <input type="radio" name="filter" id="hue" class="mix-blend">
+                <label for="hue">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: hue;">
+                </label>
 
-            </section>
-            <!-- <section class="three" onclick="goToPage(2)">
-                <h1>Messages</h1>
-            </section>
-            <section class="four" onclick="goToPage(3)">
-                <h1>Settings</h1>
-            </section> -->
-        </div>
+                <input type="radio" name="filter" id="color" class="mix-blend">
+                <label for="color">
+                    <img src="https://www.placecage.com/400/600" alt="" id="image" style="mix-blend-mode: color;">
+                </label>
 
+            </div>
+
+        </section>
 
     </div>
+    <div class="lower-menu-bar">
+        <input type="radio" name="lower-menu" id="color-wrap" value="colorz" class="tabradioz">
+        <label for="color-wrap">
+            <div class="color-wrapper">
+
+                <h1>Colors</h1>
+            </div>
+        </label>
+
+        <input type="radio" name="lower-menu" id="mix-wrap" value="mixz" class="tabradioz">
+        <label for="mix-wrap">
+            <div class="filter-wrapper">
+                <h1>Filters</h1>
+            </div>
+        </label>
+    </div>
+
 
 </body>
 
