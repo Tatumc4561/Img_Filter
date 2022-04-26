@@ -251,4 +251,125 @@ $(function () {
     })
 });
 
+//---------------COLOR TABS------------------//
 
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#noColor').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.main-content').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', 'rgb(111, 139, 139)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.main-content').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', 'rgb(111, 139, 139)');
+
+
+
+        }
+
+        
+    
+    })
+});
+
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#red').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.main-content').css('background-color', 'rgba(255, 0, 4, 0.48)');
+            $('#mainimage').css('mix-blend-mode', 'darken');
+            $('.input-wrapper').css('background-color', 'rgba(255, 0, 4, 0.48)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.main-content').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', '');
+
+
+    
+        }
+
+        
+    
+    })
+});
+
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#green').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.main-content').css('background-color', 'rgba(8, 0, 255, 0.48)');
+            $('#mainimage').css('mix-blend-mode', 'darken');
+            $('.input-wrapper').css('background-color', 'rgba(8, 0, 255, 0.48)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.main-content').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', '');
+
+
+    
+        }
+
+        
+    
+    })
+});
+
+
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#blue').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.main-content').css('background-color', 'rgba(0, 255, 153, 0.48)');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', 'rgba(0, 255, 153, 0.48)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.main-content').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', '');
+
+
+    
+        }
+
+        
+    
+    })
+});
