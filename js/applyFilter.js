@@ -259,7 +259,7 @@ $(function () {
 
         if($(this).prop('checked') == true){
        
-            $('.main-content').css('background-color', '');
+            $('.color-input-overlay').css('background-color', '');
             $('#mainimage').css('mix-blend-mode', '');
             $('.input-wrapper').css('background-color', 'rgb(111, 139, 139)');
 
@@ -270,7 +270,7 @@ $(function () {
 
         else if($(this).prop('checked') == false){
     
-            $('.main-content').css('background-color', '');
+            $('.color-input-overlay').css('background-color', '');
             $('#mainimage').css('mix-blend-mode', '');
             $('.input-wrapper').css('background-color', 'rgb(111, 139, 139)');
 
@@ -289,7 +289,7 @@ $(function () {
 
         if($(this).prop('checked') == true){
        
-            $('.main-content').css('background-color', 'rgba(255, 0, 4, 0.48)');
+            $('.color-input-overlay').css('background-color', 'rgba(255, 0, 4, 0.48)');
             $('#mainimage').css('mix-blend-mode', 'darken');
             $('.input-wrapper').css('background-color', 'rgba(255, 0, 4, 0.48)');
 
@@ -300,7 +300,7 @@ $(function () {
 
         else if($(this).prop('checked') == false){
     
-            $('.main-content').css('background-color', '');
+            $('.color-input-overlay').css('background-color', '');
             $('#mainimage').css('mix-blend-mode', '');
             $('.input-wrapper').css('background-color', '');
 
@@ -319,7 +319,7 @@ $(function () {
 
         if($(this).prop('checked') == true){
        
-            $('.main-content').css('background-color', 'rgba(8, 0, 255, 0.48)');
+            $('.color-input-overlay').css('background-color', 'rgba(8, 0, 255, 0.48)');
             $('#mainimage').css('mix-blend-mode', 'darken');
             $('.input-wrapper').css('background-color', 'rgba(8, 0, 255, 0.48)');
 
@@ -330,7 +330,7 @@ $(function () {
 
         else if($(this).prop('checked') == false){
     
-            $('.main-content').css('background-color', '');
+            $('.color-input-overlay').css('background-color', '');
             $('#mainimage').css('mix-blend-mode', '');
             $('.input-wrapper').css('background-color', '');
 
@@ -350,8 +350,8 @@ $(function () {
 
         if($(this).prop('checked') == true){
        
-            $('.main-content').css('background-color', 'rgba(0, 255, 153, 0.48)');
-            $('#mainimage').css('mix-blend-mode', '');
+            $('.color-input-overlay').css('background-color', 'rgba(0, 255, 153, 0.48)');
+            $('#mainimage').css('mix-blend-mode', 'darken');
             $('.input-wrapper').css('background-color', 'rgba(0, 255, 153, 0.48)');
 
 
@@ -361,7 +361,165 @@ $(function () {
 
         else if($(this).prop('checked') == false){
     
-            $('.main-content').css('background-color', '');
+            $('.color-input-overlay').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', '');
+
+
+    
+        }
+
+        
+    
+    })
+});
+
+
+
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#teal').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.color-input-overlay').css('background-color', 'rgba(0, 255, 247, 0.48)');
+            $('#mainimage').css('mix-blend-mode', 'darken');
+            $('.input-wrapper').css('background-color', 'rgba(0, 255, 247, 0.48)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.color-input-overlay').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', '');
+
+
+    
+        }
+
+        
+    
+    })
+});
+
+
+
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#pink').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.color-input-overlay').css('background-color', 'rgba(255, 0, 251, 0.48)');
+            $('#mainimage').css('mix-blend-mode', 'darken');
+            $('.input-wrapper').css('background-color', 'rgba(255, 0, 251, 0.48)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.color-input-overlay').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', '');
+
+
+    
+        }
+
+        
+    
+    })
+});
+
+
+
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#purple').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.color-input-overlay').css('background-color', 'rgba(119, 0, 255, 0.48)');
+            $('#mainimage').css('mix-blend-mode', 'darken');
+            $('.input-wrapper').css('background-color', 'rgba(119, 0, 255, 0.48)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.color-input-overlay').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', '');
+
+
+    
+        }
+
+        
+    
+    })
+});
+
+
+
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#yellow').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.color-input-overlay').css('background-color', 'rgba(253, 207, 0, 0.48)');
+            $('#mainimage').css('mix-blend-mode', 'darken');
+            $('.input-wrapper').css('background-color', 'rgba(253, 207, 0, 0.48)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.color-input-overlay').css('background-color', '');
+            $('#mainimage').css('mix-blend-mode', '');
+            $('.input-wrapper').css('background-color', '');
+
+
+    
+        }
+
+        
+    
+    })
+});
+
+$(function () {
+    // get all links and attach the `click` handler to them
+    $('#orange').click(function () {
+
+        if($(this).prop('checked') == true){
+       
+            $('.color-input-overlay').css('background-color', 'rgba(245, 128, 18, 0.48)');
+            $('#mainimage').css('mix-blend-mode', 'darken');
+            $('.input-wrapper').css('background-color', 'rgba(245, 128, 18, 0.48)');
+
+
+            
+    
+        }
+
+        else if($(this).prop('checked') == false){
+    
+            $('.color-input-overlay').css('background-color', '');
             $('#mainimage').css('mix-blend-mode', '');
             $('.input-wrapper').css('background-color', '');
 

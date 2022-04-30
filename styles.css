@@ -33,7 +33,6 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 90vw;
     height: 70%;
     background-color: rgb(111, 139, 139);
@@ -51,7 +50,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-
+    align-items: center;
 
 }
 /* 
@@ -62,18 +61,14 @@ body {
 
 } */
 
-#mainimage, .color-input-overlay {
-    max-height: 70%;
-    max-width: 90%;
-    
+#mainimage{
+    max-height: 65vh;
+    max-width: 90vw;    
 }
 
 .color-input-overlay {
-    
-    top: 68px;
-    z-index: 10;
-    background-color: rgba(0, 255, 119, 0.719);
-    mix-blend-mode: screen;
+    z-index: 1;
+    height: fit-content;
 }
 
 
